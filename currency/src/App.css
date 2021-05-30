@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Sigmar+One&display=swap');
+
+body{
+  margin: auto;
+  max-width: 600px;
+  margin-top: 5rem;
+}
+.App{
+  background-color: rgba(96, 165, 250);
+  max-width: 400px;
+  border: 2px solid;
+  border-style: none;
+  height: 500px;
+  width: 400px;
+  padding: 2rem;
+  box-shadow: 20px 25px #999;
+}
+.name{
+  font-family: 'Sigmar One', cursive;
+  text-align: center;
+  font-weight: bolder;
+  font-size: 50px;
+}
+.currency1{
+  text-align: center;
+  margin: 2rem;
+}
+
+.currency2{
+  text-align: center;
+  margin: 2rem;
+}
+.inp{
+  padding: 1rem;
+  border-radius: 0.5rem;
+  font-size: 15px;
+  text-align: center;
+  outline: none;
+  background-color: #e5e5e5;
+}
+.inp:focus{
+ background-color: white;
+}
+.sel{
+  padding: 1rem;
+  margin-left: 1rem;
+  border-radius: 00.5rem;
+  background-color:  rgba(252, 165, 165);
+  text-align: center;
+}
+.sel:hover{
+  background-color: rgba(239, 68, 68);
+  color: white ;
+}
+.op{
+  background-color: whitesmoke;
+  color: black;
+}
