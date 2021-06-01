@@ -34,7 +34,7 @@ if(checkStatus){
 
   useEffect(()=>{
     if(fromCurrency != null && toCurrency != null)
-     fetch(`${URL}$base=${fromCurrency}$symbols=${toCurrency}`)
+     fetch(`${URL}$base=${fromCurrency}$base2=${toCurrency}`)
      .then(res =>res.json())
      .then(info =>  setexchangeRate(info.rates[toCurrency]))
   },[fromCurrency , toCurrency])
