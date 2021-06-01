@@ -2,7 +2,7 @@ import React , {useState , useEffect} from 'react';
 import './App.css';
 import Currency from './Currency'
 
-const URL = 'http://api.exchangeratesapi.io/v1/latest?access_key=b540c23e50dd9b7640727b8dcd40a15f&format=1';
+var URL = 'http://api.exchangeratesapi.io/v1/latest?access_key=b540c23e50dd9b7640727b8dcd40a15f&format=1';
 function App() {
 const [currencyOption, setcurrencyOption] = useState([])
 const [fromCurrency, setfromCurrency] = useState()
@@ -33,6 +33,7 @@ if(checkStatus){
   }, [])
 
   useEffect(()=>{
+    if(fromCurrency != null && toCurrency != null)
      fetch(`${URL}$base=${fromCurrency}$symbols=${toCurrency}`)
      .then(res =>res.json())
      .then(info =>  setexchangeRate(info.rates[toCurrency]))
